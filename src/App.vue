@@ -1,13 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <navbar :links="routes"/>
+
     <router-view/>
+
+
   </div>
 </template>
 
 <script language="ts">
+import Navbar from "./components/Navbar";
+
+
+
 export default {
+  components: {Navbar},
   name: 'app',
+
+
+  props:["routes"]
 
 }
 </script>
@@ -19,6 +30,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 </style>
