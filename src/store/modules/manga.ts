@@ -5,7 +5,9 @@ import {MANGA} from "src/store/mutations"
 // initial state
 const state = {
   all: [],
-  info: []
+  info: [],
+
+  infoError: '',
 };
 
 // getters
@@ -14,7 +16,9 @@ const getters = {
 
   getMangaByTitle: (state, getters) => title => {
     return state.info.find(x=>x.title === title);
-  }
+  },
+
+  mangaError: state => state.infoError,
 };
 
 // actions
@@ -27,7 +31,7 @@ const actions = {
   getMangaInfo({commit}, {title}){
     api.getInfo(title).then(info=>{
       commit(MANGA.RECEIVED_INFO, {info});
-    })
+    }).catch(error=>commit(MANGA.RECEIVED_INFO_ERROR, {error}))
   }
 };
 
@@ -38,12 +42,15 @@ const mutations = {
   },
 
   [MANGA.RECEIVED_INFO](state, {info}){
+    state.infoError = '';
     const prev = state.info.findIndex(x=>x.title === info.title);
     if(prev>=0){
       state.info.slice(prev)
     }
-
     state.info.push(info);
+  },
+  [MANGA.RECEIVED_INFO_ERROR](state,{error}){
+    state.infoError = error.toString();
   }
 
 };
