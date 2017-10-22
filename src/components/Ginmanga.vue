@@ -1,7 +1,7 @@
 <template>
   <div style="flex: 1;">
 
-    <md-select v-once v-model="visibleCount">
+    <md-select v-model="visibleCount">
       <md-option v-for="(row, index) in mangasCount" :key="index"
                  :value="index">{{index}}</md-option>
     </md-select>
