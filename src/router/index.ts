@@ -4,6 +4,8 @@ import HelloWorld from 'src/components/HelloWorld.vue'
 import About from 'src/components/About.vue'
 import Project from 'src/components/Project.vue'
 import Home from 'src/components/Home.vue'
+import Ginmanga from 'src/components/Ginmanga.vue'
+
 
 Vue.use(Router)
 
@@ -24,6 +26,10 @@ export const routes: {name, path, component}[] = [
     path: '/project',
     name: 'Project',
     component: Project
+  },{
+    path: '/ginmanga',
+    name: 'GinManga',
+    component: Ginmanga
   }
 ];
 
