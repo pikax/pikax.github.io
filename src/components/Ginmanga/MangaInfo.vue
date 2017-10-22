@@ -1,10 +1,23 @@
 <template>
   <md-layout md-gutter>
 
+    <md-dialog md-open-from="#img" md-close-to="#img" ref="imageDialog">
+      <!--<md-dialog-title>{{title}}</md-dialog-title>-->
+
+      <md-dialog-content><md-image :md-src="image"></md-image></md-dialog-content>
+
+      <!--<md-dialog-actions>-->
+        <!--<md-button class="md-primary" @click="closeDialog('dialog1')">Cancel</md-button>-->
+        <!--<md-button class="md-primary" @click="closeDialog('dialog1')">Ok</md-button>-->
+      <!--</md-dialog-actions>-->
+    </md-dialog>
+
+
+
     <md-layout md-row md-flex="100">
       <md-layout md-row>
-        <md-avatar class="md-large">
-          <img :src="image" :alt="title">
+        <md-avatar class="md-large" >
+          <img id="img" :src="image" :alt="title" @click="onImageClick">
         </md-avatar>
 
         <md-layout md-column>
@@ -160,12 +173,12 @@
     },
 
 
-    // methods:{
-    //   sortChaptersBy(sorter){
-    //     console.log(`sorting by ${JSON.stringify(sorter)}`);
-    //     (this as any).sorter = sorter;
-    //   }
-    // },
+    methods:{
+      onImageClick(){
+        console.log('opening img');
+        (this as any).$refs.imageDialog.open()
+      }
+    },
 
 
     data: () => ({

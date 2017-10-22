@@ -2,7 +2,7 @@
   <nav>
     <ul>
       <li v-for="link in links" :key="link.name" class="hover">
-        <router-link :to="link.path">{{link.name}}</router-link>
+        <router-link :to="link.path" v-if="link.visible !== false">{{link.name}}</router-link>
       </li>
 
     </ul>
@@ -23,6 +23,7 @@
 <script>
   export default {
     name: "navbar",
+
 
 
     props: [

@@ -5,13 +5,14 @@ import About from 'src/components/About.vue'
 import Project from 'src/components/Project.vue'
 import Home from 'src/components/Home.vue'
 import Ginmanga from 'src/components/Ginmanga.vue'
+import GinmangaInfo from 'src/components/Ginmanga/GinmangaInfo.vue'
 
 
 Vue.use(Router)
 
 
 
-export const routes: {name, path, component}[] = [
+export const routes: {name, path, component, props?, visible?}[] = [
   {
     path: '/',
     name: 'Home',
@@ -26,11 +27,21 @@ export const routes: {name, path, component}[] = [
     path: '/project',
     name: 'Project',
     component: Project
-  },{
+  },
+  {
     path: '/ginmanga',
     name: 'GinManga',
     component: Ginmanga
+  },
+  {
+    path: "/ginmanga/:title",
+    name: "Manga",
+    component: GinmangaInfo,
+    props: true,
+    visible: false
+
   }
+
 ];
 
 

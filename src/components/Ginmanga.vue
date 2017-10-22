@@ -46,7 +46,7 @@
     data:()=>({
       selectedManga:'',
 
-      visibleCount: 3,
+      visibleCount: 7,
     }),
 
     components: {
@@ -73,7 +73,10 @@
         'addToCart'
       ]),
       openManga({title}) {
-        this.selectedManga = title;
+        // this.selectedManga = title;
+
+
+        this.$router.push('/ginmanga/'+title)
 
       }
     },
@@ -94,6 +97,8 @@
 <style lang="scss" scoped>
   $break-small: 620px;
 
+  $break-med: 650px;
+
   .md-card {
     width: 100%;
     max-width: 240px;
@@ -102,10 +107,12 @@
     vertical-align: top;
 
     @media screen and (max-width: $break-small) {
-      width: 200px;
+      width: 47%;
       float: none;
-      background: red;
+    }
 
+    @media only screen and (orientation: landscape) {
+      width: 31%;
     }
 
     @media screen and (min-width: $break-small) {
