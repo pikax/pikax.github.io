@@ -29,7 +29,7 @@
 
     </manga-card>
 
-    <ginmanga-info :title="selectedManga" v-if="!!selectedManga" />
+<ginmanga-info :title="selectedManga" v-if="!!selectedManga" />
 
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <md-card md-with-hover class="card">
+  <md-card md-with-hover class="card focused" tabindex="-1" md-with-focus >
     <md-card-media-cover md-solid md-text-scrim>
       <md-card-media md-ratio="1:1">
         <img :src="image" :alt="alt">
@@ -46,5 +46,8 @@
 <style lang="scss" scoped>
 
 
+  .focused:focus{
+    border: red;
+  }
 
 </style>
