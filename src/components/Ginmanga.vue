@@ -96,7 +96,7 @@
 
 
     created() {
-      // (this).$store.dispatch('getAllMangas')
+      (this).$store.dispatch('getAllMangas')
     },
 
   }
