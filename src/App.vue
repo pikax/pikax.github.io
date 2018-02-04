@@ -39,7 +39,8 @@
     v-content
       v-container(fill-height='')
         v-layout( )
-          router-view
+          slot
+            router-view
         //
           v-tooltip(right='')
             v-btn(icon='', large='', :href='source', target='_blank', slot='activator')
