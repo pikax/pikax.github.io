@@ -15,7 +15,7 @@ const getters = {
   allMangas: state => state.all,
 
   getMangaByTitle: (state, getters) => title => {
-    return state.info.find(x=>x.title === title);
+    return state.info.find(x => x.title === title);
   },
 
   mangaError: state => state.infoError,
@@ -28,10 +28,12 @@ const actions = {
       commit(MANGA.RECEIVED_MY, {mangas})
     })
   },
-  getMangaInfo({commit}, {title}){
-    api.getInfo(title).then(info=>{
-      commit(MANGA.RECEIVED_INFO, {info});
-    }).catch(error=>commit(MANGA.RECEIVED_INFO_ERROR, {error}))
+  getMangaInfo({commit}, {title}) {
+    return api.getInfo(title)
+      .then(info => {
+        commit(MANGA.RECEIVED_INFO, {info});
+        return info;
+      }).catch(error => commit(MANGA.RECEIVED_INFO_ERROR, {error}))
   }
 };
 
@@ -41,15 +43,15 @@ const mutations = {
     state.all = mangas
   },
 
-  [MANGA.RECEIVED_INFO](state, {info}){
+  [MANGA.RECEIVED_INFO](state, {info}) {
     state.infoError = '';
-    const prev = state.info.findIndex(x=>x.title === info.title);
-    if(prev>=0){
+    const prev = state.info.findIndex(x => x.title === info.title);
+    if (prev >= 0) {
       state.info.slice(prev)
     }
     state.info.push(info);
   },
-  [MANGA.RECEIVED_INFO_ERROR](state,{error}){
+  [MANGA.RECEIVED_INFO_ERROR](state, {error}) {
     state.infoError = error.toString();
   }
 

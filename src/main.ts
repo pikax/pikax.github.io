@@ -5,9 +5,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import {sync} from 'vuex-router-sync'
 
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.css'
-Vue.use(VueMaterial);
+// import VueMaterial from 'vue-material'
+// import 'vue-material/dist/vue-material.css'
+// Vue.use(VueMaterial);
+import Vuetify from 'vuetify'
+// index.js or main.js
+import 'vuetify/dist/vuetify.min.css' // Ensure you are using css-loader
+Vue.use(Vuetify)
+
 
 
 import router, {routes} from './router/index'

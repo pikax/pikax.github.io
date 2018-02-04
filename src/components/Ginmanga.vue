@@ -1,37 +1,43 @@
-<template>
-  <div style="flex: 1;">
+<template lang="pug">
+  v-container(
+  grid-list-md='',
+  fill-height="true"
+  )
+    v-layout( row='', wrap='')
+      v-flex(xs12='')
+        v-select(
+        v-model='visibleCount',
+        :items='listMangas',
+        item-value="index",
+        )
 
-    <md-select v-model="visibleCount">
-      <md-option v-for="(row, index) in mangasCount" :key="index"
-                 :value="index">{{index}}</md-option>
-    </md-select>
+      v-flex()
+        manga-card.gin-card(
+        v-for='m in visible',
+        :key='m.title',
+        :title='m.title',
+        :image='m.image',
+        :alt='m.title',
+        :class-object="{'gin-other': true}"
+        :onClick="openManga"
+        )
+          v-toolbar(slot='actions')
+            //
+              v-btn-toggle(v-model='isFavorite(m)' )
+                v-btn(flat)
+                  v-icon favorite
+            favorite-button(:title='m.title')
 
-    <manga-card v-for="m in visible" :key="m.title"
-                @click.native="openManga(m)"
-                class="md-card"
-                :title="m.title"
-                :image="m.image"
-                :alt="m.title">
+          //
+            md-card-actions(slot='actions')
+              md-button.md-icon-button
+                md-icon favorite
+              md-button.md-icon-button
+                md-icon bookmark
+              md-button.md-icon-button
+                md-icon share
+    ginmanga-info(:title='selectedManga', v-if='!!selectedManga')
 
-      <md-card-actions slot="actions">
-        <md-button class="md-icon-button">
-          <md-icon>favorite</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>bookmark</md-icon>
-        </md-button>
-
-        <md-button class="md-icon-button">
-          <md-icon>share</md-icon>
-        </md-button>
-      </md-card-actions>
-
-    </manga-card>
-
-<ginmanga-info :title="selectedManga" v-if="!!selectedManga" />
-
-  </div>
 </template>
 
 <script>
@@ -39,31 +45,39 @@
   import MangaCard from "./Ginmanga/MangaCard";
   import MangaInfo from "./Ginmanga/MangaInfo";
   import GinmangaInfo from "./Ginmanga/GinmangaInfo";
+  import FavoriteButton from "./Ginmanga/FavoriteButton";
 
   export default {
     name: "ginmanga",
 
-    data:()=>({
-      selectedManga:'',
+    data: () => ({
+      selectedManga: '',
 
-      visibleCount: 7,
+      visibleCount: 17,
     }),
 
     components: {
+      FavoriteButton,
       GinmangaInfo,
       MangaInfo,
-      MangaCard},
+      MangaCard
+    },
 
     computed: {
       ...mapGetters({
-                   mangas: 'allMangas'
-                 }),
+        mangas: 'allMangas'
+      }),
 
-      mangasCount: function(){
+      mangasCount: function () {
         return this.mangas.length;
       },
 
-      visible:function(){
+
+      listMangas: function () {
+        return Array.from(this.mangas, (x, i) => i).slice(1);
+      },
+
+      visible: function () {
         return this.mangas.slice(0, this.visibleCount)
       }
     },
@@ -72,21 +86,17 @@
       ...mapActions([
         'addToCart'
       ]),
-      openManga({title}) {
+      openManga(title) {
         // this.selectedManga = title;
 
+        this.$router.push('/ginmanga/' + title)
+      },
 
-        this.$router.push('/ginmanga/'+title)
-
-      }
     },
 
 
-
-
-
     created() {
-      (this).$store.dispatch('getAllMangas')
+      // (this).$store.dispatch('getAllMangas')
     },
 
   }
@@ -99,12 +109,18 @@
 
   $break-med: 650px;
 
-  .md-card {
+
+  .gin-other {
+    height: 200px;
+  }
+
+  .gin-card {
     width: 100%;
     max-width: 240px;
     margin: 0 4px 16px;
     display: inline-block;
     vertical-align: top;
+
 
     @media screen and (max-width: $break-small) {
       width: 47%;

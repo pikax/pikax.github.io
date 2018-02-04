@@ -6,7 +6,8 @@ export function getAllMangas() {
 
 
 export function getInfo(title: string){
-  return axios.get("/static/info/"+title+'/info.json').then(x=>x.data);
+  return axios.get("/static/info/"+title+'/info.json')
+      .then(x=>x.data);
 }
 
 export function getChapter(title:string, chapter){

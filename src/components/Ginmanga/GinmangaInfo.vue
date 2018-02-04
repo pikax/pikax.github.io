@@ -1,14 +1,16 @@
-<template>
-  <div>
+<template lang="pug">
+  div
 
-    <manga-info :title="manga.title" v-if="!!manga && !error && !loading" v-bind="manga"></manga-info>
-    <div v-if="error">
-      ERROR: error
-    </div>
+    manga-info(:title='manga.title', v-if='!!manga && !error && !loading', v-bind='manga')
 
-    <md-spinner :md-indeterminate="loading" v-if="loading"></md-spinner>
+    //
+      p {{manga}}
+    div(v-if='error')
+      | ERROR: error {{error}}
 
-  </div>
+    v-container(fluid, align-center)
+      v-progress-circular(:indeterminate='loading', v-if='loading')
+
 </template>
 
 <script>
@@ -22,7 +24,8 @@
 
     data: () => ({
       info: null,
-      loading: null,
+      loading: true,
+      manga: null,
     }),
 
     computed: {
@@ -30,22 +33,24 @@
         getManga: 'getMangaByTitle',
         error: "mangaError"
       }),
+      /*
+            manga: function () {
+              const {title} = this;
+              const info = this.getManga(title);
 
-      manga: function () {
-        const {title} = this;
-        const info = this.getManga(title);
 
-        if (!info) {
-          console.log("getting info")
-          this.loading = true;
-          this.getMangaInfo({title});
-          return null;
-        }
 
-        this.loading = false;
+              if (!info) {
+                console.log("getting info")
+                this.loading = true;
+                this.getMangaInfo({title});
+                return null;
+              }
 
-        return info;
-      }
+              this.loading = true;
+
+              return info;
+            }*/
     },
 
 
@@ -53,6 +58,32 @@
       ...mapActions([
         'getMangaInfo'
       ]),
+
+
+      resolveManga: function () {
+        const {title} = this;
+        const info = this.getManga(title);
+
+        this.loading = true;
+        if (!info) {
+          this.getMangaInfo({title})
+            .then(x => this.setManga(x))
+            .catch(x => {
+              this.loading = false;
+            })
+        } else {
+          this.setManga(info);
+        }
+
+      },
+
+      setManga: function (manga) {
+        this.manga = manga;
+        this.loading = false;
+
+      }
+
+
     },
 
     props: {
@@ -66,9 +97,12 @@
     watch: {
       title: function (value, prev) {
         console.log(`new: ${value} | prev: ${prev}`)
-
-
       }
+    },
+
+
+    mounted(){
+      this.resolveManga();
     }
 
   }

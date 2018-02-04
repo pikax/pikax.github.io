@@ -1,24 +1,9 @@
-<template>
-  <md-card md-with-hover class="card focused" tabindex="-1" md-with-focus >
-    <md-card-media-cover md-solid md-text-scrim>
-      <md-card-media md-ratio="1:1">
-        <img :src="image" :alt="alt">
-        <md-ink-ripple></md-ink-ripple>
-      </md-card-media>
+<template lang="pug">
 
-
-      <md-card-area>
-        <md-card-header>
-          <div class="md-subhead">{{title}}</div>
-        </md-card-header>
-
-
-          <slot name="actions"></slot>
-      </md-card-area>
-    </md-card-media-cover>
-
-  </md-card>
-
+  v-card(:class='classObject', )
+    v-card-media.gin-card-media(:src="image", :height='height', @click.native="raiseClick")
+    span.gin-card-title(v-text="title")
+    slot(name='actions')
 </template>
 
 <script>
@@ -26,18 +11,30 @@
     name: "manga-card",
 
     props: {
-      title: {type:String, required:true},
+      title: {type: String, required: true},
       image: String,
       alt: String,
       subtitle: String,
 
       mature: Boolean,
 
-      actions:{default: true}
+      actions: {default: null},
+
+      classObject: Object,
+
+      onClick: Function,
+
+      height: {type: String, default: '10em'}
     },
 
-    data: () => ({
-    }),
+    data: () => ({}),
+
+
+    methods:{
+      raiseClick(){
+        this.onClick(this.title);
+      }
+    }
 
 
   }
@@ -45,9 +42,20 @@
 
 <style lang="scss" scoped>
 
-
-  .focused:focus{
-    border: red;
+  .gin-card-media{
+    cursor: pointer;
   }
+
+  .gin-card-title {
+    background: rgba(0, 0, 0, 50);
+
+    text-overflow: ellipsis;
+    width: 100%;
+
+    overflow: hidden;
+    white-space: nowrap;
+    display:inline-block;
+  }
+
 
 </style>
