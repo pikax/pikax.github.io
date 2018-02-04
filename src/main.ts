@@ -5,6 +5,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import {sync} from 'vuex-router-sync'
 
+import 'babel-polyfill'
+
 // import VueMaterial from 'vue-material'
 // import 'vue-material/dist/vue-material.css'
 // Vue.use(VueMaterial);
