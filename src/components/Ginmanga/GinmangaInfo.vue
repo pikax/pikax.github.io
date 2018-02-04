@@ -1,11 +1,11 @@
 <template lang="pug">
   div
 
-    manga-info(:title='manga.title', v-if='!!manga && !error && !loading', v-bind='manga')
+    manga-info(:title='manga.title', v-if='!!manga && !loading', v-bind='manga')
 
     //
       p {{manga}}
-    div(v-if='error')
+    div(v-if='!manga && error')
       | ERROR: error {{error}}
 
     v-container(fluid, align-center)
@@ -97,6 +97,10 @@
     watch: {
       title: function (value, prev) {
         console.log(`new: ${value} | prev: ${prev}`)
+
+        if(value !== prev){
+          this.resolveManga();
+        }
       }
     },
 
