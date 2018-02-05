@@ -46,7 +46,8 @@ module.exports = {
   */
   modules: [
     '~modules/typescript.js',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/component-cache',
   ],
 
 
@@ -58,6 +59,12 @@ module.exports = {
     name: 'Pikax app',
     lang: 'en'
   },
+
+
+  workbox:{
+
+  },
+
 
   /*
   ** Build configuration
