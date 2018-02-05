@@ -56,13 +56,20 @@ module.exports = {
   */
 
   manifest: {
-    name: 'Pikax app',
-    lang: 'en'
+    name: 'Pikaxapp',
+    short_name: 'PikaxApp',
+    start_url: '.',
+    "display": "standalone",
+    lang: 'en',
+
+    theme_color: '#3B8070'
   },
 
 
   workbox:{
-
+    importScripts: [
+      'sw.js'
+    ],
   },
 
 
