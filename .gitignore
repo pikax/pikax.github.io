@@ -128,3 +128,7 @@ typings/
 
 # next.js build output
 .next
+
+
+.idea/markdown*.xml
+.idea/markdown-navigator/**/*
