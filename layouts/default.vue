@@ -59,6 +59,7 @@
         fixed: true,
         items: [
           {icon: 'book', text: "Mangas", nav: '/ginmanga'},
+          {icon: 'eject', text: "Status", nav: '/status'},
           {icon: 'trending_up', text: 'Most Popular'},
           {icon: 'subscriptions', text: 'Subscriptions'},
           {icon: 'history', text: 'History'},
