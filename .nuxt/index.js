@@ -12,6 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 import { createStore } from './store.js'
 
 /* Plugins */
+import nuxt_plugin_swplugin_2b537bba from 'nuxt_plugin_swplugin_2b537bba' // Source: ./sw.plugin.js (ssr: false)
 import nuxt_plugin_vuetify_e5914fcc from 'nuxt_plugin_vuetify_e5914fcc' // Source: ..\\plugins\\vuetify
 import nuxt_plugin_localStorage_830ec59e from 'nuxt_plugin_localStorage_830ec59e' // Source: ..\\plugins\\localStorage.js (ssr: false)
 
@@ -155,6 +156,7 @@ async function createApp (ssrContext) {
   if (typeof nuxt_plugin_vuetify_e5914fcc === 'function') await nuxt_plugin_vuetify_e5914fcc(app.context, inject)
   
   if (process.browser) { 
+    if (typeof nuxt_plugin_swplugin_2b537bba === 'function') await nuxt_plugin_swplugin_2b537bba(app.context, inject)
     if (typeof nuxt_plugin_localStorage_830ec59e === 'function') await nuxt_plugin_localStorage_830ec59e(app.context, inject)
   }
 
