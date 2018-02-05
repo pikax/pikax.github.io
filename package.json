@@ -4,6 +4,9 @@
   "description": "Pikax personal page",
   "author": "Carlos Rodrigues",
   "private": true,
+  "now": {
+    "alias": "pikax.github.io"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -16,22 +19,22 @@
     "@nuxtjs/pwa": "^2.0.5",
     "axios": "^0.17.1",
     "lodash": "^4.17.5",
-    "nuxt": "^1.0.0",
+    "nuxt": "^1.3.0",
     "vuetify": "^1.0.0-beta.5",
     "vuex": "^3.0.1",
     "vuex-persistedstate": "^2.4.2",
     "webpack": "^3.10.0"
   },
   "devDependencies": {
-    "@types/node": "^8.0.14",
-    "cross-env": "^5.0.1",
+    "@types/node": "^9.4.0",
+    "cross-env": "^5.1.3",
     "node-sass": "^4.7.2",
     "pug": "^2.0.0-rc.4",
     "push-dir": "^0.4.1",
     "sass-loader": "^6.0.6",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
-    "ts-loader": "^2.3.0",
-    "typescript": "^2.4.1"
+    "ts-loader": "^3.4.0",
+    "typescript": "^2.7.1"
   }
 }

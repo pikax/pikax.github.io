@@ -26,6 +26,12 @@ module.exports = {
   */
   loading: {color: '#3B8070'},
 
+  loadingIndicator: {
+    name: 'rectangle-bounce',
+    color: 'white',
+    background: '#188269'
+  },
+
   /*
   ** Global CSS
   */
@@ -51,26 +57,31 @@ module.exports = {
   ],
 
 
+  router: {
+    middleware: ['https']
+  },
+
   /*
   ** PWA manifest
   */
 
   manifest: {
     name: 'Pikaxapp',
-    short_name: 'PikaxApp',
+    description: 'pikax website',
+ /*   short_name: 'PikaxApp',
     start_url: '/',
     display: "standalone",
     lang: 'en',
-
+*/
     theme_color: '#3B8070'
   },
 
-
-  workbox:{
-    importScripts: [
-      'sw.js'
-    ],
-  },
+	//
+  // workbox:{
+  //   importScripts: [
+  //     'sw.js'
+  //   ],
+  // },
 
 
   /*
@@ -88,6 +99,17 @@ module.exports = {
             whitelist: [/^vuetify/]
           })
         ]
+      }
+    }
+  },
+
+  render: {
+    static: {
+      maxAge: '1y',
+      setHeaders (res, path) {
+        if (path.includes('sw.js')) {
+          res.setHeader('Cache-Control', 'public, max-age=0')
+        }
       }
     }
   }
