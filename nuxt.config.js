@@ -45,8 +45,19 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    '~modules/typescript.js'
+    '~modules/typescript.js',
+    '@nuxtjs/pwa'
   ],
+
+
+  /*
+  ** PWA manifest
+  */
+
+  manifest: {
+    name: 'Pikax app',
+    lang: 'en'
+  },
 
   /*
   ** Build configuration
