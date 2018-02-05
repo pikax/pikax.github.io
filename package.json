@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Pikax personal page",
   "author": "Carlos Rodrigues",
-  "private": true,
   "now": {
     "alias": "pikax.github.io"
   },
