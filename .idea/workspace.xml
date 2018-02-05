@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="959d325f-4c16-45a4-be50-8fbefa7c03da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/api/interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/manga/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/manga/manga.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/manga/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/FavoriteButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MangaCard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/typescript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/ginmanga.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/modules/manga.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/modules/user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/mutations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/components/no-ssr.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/components/no-ssr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/components/nuxt-child.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/components/nuxt-child.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/components/nuxt-error.vue" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/components/nuxt-error.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/components/nuxt-link.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/components/nuxt-link.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/components/nuxt-loading.vue" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/components/nuxt-loading.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/components/nuxt.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/components/nuxt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/empty.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/empty.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/layouts/default.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/loading.html" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/loading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/views/app.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/views/app.template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/views/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/views/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/vuetify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dev-client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/dev-server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/interface.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/manga/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/manga/manga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/manga/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/About.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ginmanga.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ginmanga/ChapterCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ginmanga/FavoriteButton.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ginmanga/GinmangaInfo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ginmanga/MangaCard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Ginmanga/MangaInfo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Project.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/templ/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/components/AppComponent.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/pages/ginmanga.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/pages/index.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/manga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/mutations.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-shims.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Akame ga Kill!.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Akame ga Kill!.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Ansatsu Kyoushitsu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Ansatsu Kyoushitsu.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Beelzebub.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Beelzebub.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Berserk.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Berserk.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Bleach.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Bleach.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Blood Lad.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Blood Lad.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Fairy Tail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Fairy Tail.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Gintama.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Gintama.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Holyland.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Holyland.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Hungry Joker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Hungry Joker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Hunter x Hunter.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Hunter x Hunter.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Katekyo Hitman Reborn!.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Katekyo Hitman Reborn!.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Magi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Magi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Naruto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Naruto.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/One Piece.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/One Piece.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/One Punch-Man.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/One Punch-Man.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Psyren.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Psyren.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Shijou Saikyou no Deshi Kenichi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Shijou Saikyou no Deshi Kenichi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Toriko.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Toriko.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Vagabond.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Vagabond.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/Vinland Saga.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/Vinland Saga.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/cover.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cover/xxxHOLiC.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cover/xxxHOLiC.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/126.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/126.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/127.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/127.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/128.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/128.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/129.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/129.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/130.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/130.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/131.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/131.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/132.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/132.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/133.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/133.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/134.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/134.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/135.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/135.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/136.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/136.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/137.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/137.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/138.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/138.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/139.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/139.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/140.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/140.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/141.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/141.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/142.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/142.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/143.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/143.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/144.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/144.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/145.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/145.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/146.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/146.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/147.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/147.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/148.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/148.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/149.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/149.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/150.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/150.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/151.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/151.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/152.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/152.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/153.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/153.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/154.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/154.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/155.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/155.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/156.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/156.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/157.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/157.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/158.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/158.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/159.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/159.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/160.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/160.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/161.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/161.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/162.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/162.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/163.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/163.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/164.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/164.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/165.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/165.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/166.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/166.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/167.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/167.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/168.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/168.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/169.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/169.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/170.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/170.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/171.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/171.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/172.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/172.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/173.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/173.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/174.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/174.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/175.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/175.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/176.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/176.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/177.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/177.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/178.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/178.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/179.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/179.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/180.1.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/180.1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/180.2.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/180.2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/180.3.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/180.3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/180.4.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/180.4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/180.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/180.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/38.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/38.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/39.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/39.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/40.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/40.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/41.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/41.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/42.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/42.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/43.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/43.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/44.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/44.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/45.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/45.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/46.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/46.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/47.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/47.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/48.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/48.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/49.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/49.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/50.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/50.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/51.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/51.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/52.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/52.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/76.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/76.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/96.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/96.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/97.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/97.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Ansatsu Kyoushitsu/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Ansatsu Kyoushitsu/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Beelzebub/183.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Beelzebub/183.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Beelzebub/197.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Beelzebub/197.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Beelzebub/199.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Beelzebub/199.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Beelzebub/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Beelzebub/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/0.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/317.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/317.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/335.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/335.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/336.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/336.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/338.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/338.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/339.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/339.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/340.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/340.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/341.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/341.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/342.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/342.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/343.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/343.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/344.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/344.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/345.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/345.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/346.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/346.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/347.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/347.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/348.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/348.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/349.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/349.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/350.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/350.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/351.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/351.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Berserk/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Berserk/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Bleach/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Bleach/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/10.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/10.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/11.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/11.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/12.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/12.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/13.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/13.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/14.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/14.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/15.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/15.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/16.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/16.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/17.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/17.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/18.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/18.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/19.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/19.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/20.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/20.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/21.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/21.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/22.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/22.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/23.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/23.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/24.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/24.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/25.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/25.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/26.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/26.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/27.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/27.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/28.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/28.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/29.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/29.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/3.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/30.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/30.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/31.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/31.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/32.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/32.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/33.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/33.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/34.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/34.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/35.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/35.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/36.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/36.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/37.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/37.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/38.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/38.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/39.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/39.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/4.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/4.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/40.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/40.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/41.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/41.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/42.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/42.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/43.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/43.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/44.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/44.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/45.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/45.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/46.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/46.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/47.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/47.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/48.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/48.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/49.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/49.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/5.5.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/5.5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/5.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/5.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/50.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/50.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/51.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/51.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/52.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/52.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/53.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/53.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/54.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/54.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/55.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/55.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/56.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/56.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/57.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/57.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/58.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/58.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/59.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/59.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/6.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/60.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/60.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/61.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/61.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/62.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/62.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/63.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/63.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/64.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/64.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/65.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/65.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/66.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/66.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/67.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/67.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/68.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/68.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/69.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/69.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/7.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/7.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/70.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/70.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/71.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/71.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/72.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/72.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/73.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/73.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/74.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/74.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/75.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/75.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/76.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/76.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/8.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/8.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/9.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/9.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Blood Lad/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Blood Lad/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Fairy Tail/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Fairy Tail/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Gintama/503.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Gintama/503.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Gintama/504.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Gintama/504.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Gintama/505.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Gintama/505.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/info/Gintama/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/info/Gintama/info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MangaCard.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/MangaCard.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="45" selection-start-line="25" selection-end-line="26" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ginmanga/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FavoriteButton.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/FavoriteButton.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_id.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ginmanga/_id.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tsconfig.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/manga/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+              <folding>
+                <element signature="e#1588#1628#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manga.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/manga/manga.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="743">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mutations.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/mutations.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript X" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>assets</find>
+      <find>getManga</find>
+      <find>getMangaByTitle</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/App.vue" />
+        <option value="$PROJECT_DIR$/src/vue-shims.d.ts" />
+        <option value="$PROJECT_DIR$/src/router/index.ts" />
+        <option value="$PROJECT_DIR$/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/build/dev-server.js" />
+        <option value="$PROJECT_DIR$/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/src/components/Ginmanga/MangaInfo.vue" />
+        <option value="$PROJECT_DIR$/src/components/Ginmanga.vue" />
+        <option value="$PROJECT_DIR$/src/components/Ginmanga/MangaCard.vue" />
+        <option value="$PROJECT_DIR$/src/components/Home.vue" />
+        <option value="$PROJECT_DIR$/src/main.ts" />
+        <option value="$PROJECT_DIR$/src/server/modules/typescript.ts" />
+        <option value="$PROJECT_DIR$/layouts/_default.vue" />
+        <option value="$PROJECT_DIR$/plugins/vuetify.js" />
+        <option value="$PROJECT_DIR$/store/index.ts" />
+        <option value="$PROJECT_DIR$/plugins/axios.js" />
+        <option value="$PROJECT_DIR$/store/index.js" />
+        <option value="$PROJECT_DIR$/modules/typescript.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/modules/typescript.js" />
+        <option value="$PROJECT_DIR$/store/modules/manga.ts" />
+        <option value="$PROJECT_DIR$/pages/ginmanga.vue" />
+        <option value="$PROJECT_DIR$/layouts/default.vue" />
+        <option value="$PROJECT_DIR$/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/components/MangaInfo.vue" />
+        <option value="$PROJECT_DIR$/__src/components/Ginmanga/GinmangaInfo.vue" />
+        <option value="$PROJECT_DIR$/__src/store/modules/manga.ts" />
+        <option value="$PROJECT_DIR$/api/manga/manga.ts" />
+        <option value="$PROJECT_DIR$/pages/ginmanga/_id.vue" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path />
+    <config-path />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsCSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Dart</id>
+          </State>
+          <State>
+            <id>EJS</id>
+          </State>
+          <State>
+            <id>File Watchers</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Node.jsJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Pug/Jade</id>
+          </State>
+          <State>
+            <id>RELAX NG</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>Unit testingJavaScript</id>
+          </State>
+          <State>
+            <id>Vue</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Eslint</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="ginmanga" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pikax.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pikax.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="js.eslint.eslintPackage" value="C:\Program Files\nodejs\node_modules\eslint" />
+    <property name="js.eslint.nodeInterpreter" value="project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nuxt-ts" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="Q:\__Carlos\othjer\pikax.github.io\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="Q:\__Carlos\othjer\pikax.github.io\pages\ginmanga" />
+      <recent name="Q:\__Carlos\othjer\pikax.github.io\assets" />
+      <recent name="Q:\__Carlos\othjer\pikax.github.io\old" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Q:\__Carlos\othjer\pikax.github.io\components" />
+      <recent name="Q:\__Carlos\othjer\pikax.github.io\plugins" />
+      <recent name="Q:\__Carlos\othjer\pikax.github.io\static" />
+      <recent name="Q:\__Carlos\othjer\pikax.github.io" />
+      <recent name="Q:\__Carlos\othjer\pikax.github.io\store" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="959d325f-4c16-45a4-be50-8fbefa7c03da" name="Default" comment="" />
+      <created>1507892940187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1507892940187</updated>
+      <workItem from="1507892941392" duration="10872000" />
+      <workItem from="1508485485272" duration="6386000" />
+      <workItem from="1508780840536" duration="789000" />
+      <workItem from="1515501331408" duration="3249000" />
+      <workItem from="1515588808814" duration="1455000" />
+      <workItem from="1517830643415" duration="8292000" />
+      <workItem from="1517844297317" duration="2064000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="33107000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="4" visible="true" weight="0.26545843" />
+      <window_info anchor="bottom" id="Reviews" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="News Feed" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/store/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="374">
+            <caret line="22" selection-start-line="22" selection-end-line="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__old/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="57" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="57" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/nuxt/lib/app/components/nuxt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/index.ts" />
+    <entry file="file://$PROJECT_DIR$/middleware/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/_default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="n#v-toolbar#0;n#v-app#0;n#template#0;n#!!top" />
+            <element signature="n#v-navigation-drawer#1;n#v-app#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/axios.js" />
+    <entry file="file://$PROJECT_DIR$/plugins/vuetify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/inspire.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.d.ts" />
+    <entry file="file://$PROJECT_DIR$/__old/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/typescript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/manga/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/modules/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/modules/manga.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Ginmanga.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="63" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="51">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/localstorage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/store/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#64#118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Ginmanga/MangaInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/vue-shims.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/vue/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/VuetifyLogo.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/MangaInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Ginmanga/GinmangaInfo.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Ginmanga/MangaCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Ginmanga/FavoriteButton.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Ginmanga/ChapterCard.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Navbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/Project.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/components/About.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/MangaCard.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="45" selection-start-line="25" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/FavoriteButton.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/mutations.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ginmanga/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__src/store/modules/manga.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/manga/manga.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/manga/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="15" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding>
+            <element signature="e#1588#1628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/ginmanga/_id.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

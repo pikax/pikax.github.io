@@ -3,8 +3,10 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _c1707b40 = () => import('..\\src\\server\\pages\\ginmanga.vue' /* webpackChunkName: "pages_ginmanga" */).then(m => m.default || m)
-const _3cf72e0a = () => import('..\\src\\server\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
+const _1f14432a = () => import('..\\pages\\inspire.vue' /* webpackChunkName: "pages_inspire" */).then(m => m.default || m)
+const _90c8610a = () => import('..\\pages\\ginmanga\\index.vue' /* webpackChunkName: "pages_ginmanga_index" */).then(m => m.default || m)
+const _3d8516ba = () => import('..\\pages\\ginmanga\\_id.vue' /* webpackChunkName: "pages_ginmanga__id" */).then(m => m.default || m)
+const _ff7ffaba = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 
 
@@ -54,13 +56,23 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
+			path: "/inspire",
+			component: _1f14432a,
+			name: "inspire"
+		},
+		{
 			path: "/ginmanga",
-			component: _c1707b40,
+			component: _90c8610a,
 			name: "ginmanga"
 		},
 		{
+			path: "/ginmanga/:id",
+			component: _3d8516ba,
+			name: "ginmanga-id"
+		},
+		{
 			path: "/",
-			component: _3cf72e0a,
+			component: _ff7ffaba,
 			name: "index"
 		}
     ],

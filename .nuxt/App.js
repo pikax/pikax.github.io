@@ -1,19 +1,21 @@
 import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
-import '..\\node_modules\\vuetify\\dist\\vuetify.css'
+import '..\\node_modules\\vuetify\\src\\stylus\\main.styl'
 
 
 let layouts = {
 
-  "_default": () => import('./layouts/default.vue'  /* webpackChunkName: "layouts_default" */).then(m => m.default || m)
+  "__default": () => import('..\\layouts\\_default.vue'  /* webpackChunkName: "layouts__default" */).then(m => m.default || m),
+
+  "_default": () => import('..\\layouts\\default.vue'  /* webpackChunkName: "layouts_default" */).then(m => m.default || m)
 
 }
 
 let resolvedLayouts = {}
 
 export default {
-  head: {"title":"TodoMVC made with Nuxt.js","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","content":"TodoMVC project made with Nuxt.js."}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"favicon.ico"},{"rel":"stylesheet","type":"text\u002Fcss","href":"\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"}],"style":[],"script":[]},
+  head: {"title":"pikax.github.io","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Pikax personal page"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"}],"style":[],"script":[]},
   render(h, props) {
     const loadingEl = h('nuxt-loading', { ref: 'loading' })
     const layoutEl = h(this.layout || 'nuxt')

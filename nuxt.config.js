@@ -1,29 +1,69 @@
+const pkg = require('./package')
+
+const nodeExternals = require('webpack-node-externals')
+
 module.exports = {
+  mode: 'universal',
+
+  /*
+  ** Headers of the page
+  */
   head: {
-    title: 'TodoMVC made with Nuxt.js',
+    title: pkg.name,
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', content: 'TodoMVC project made with Nuxt.js.' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: pkg.description}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'}
     ]
   },
-  /*css: [
-    { src: 'todomvc-app-css/index.css' }
-  ],
-  router: {
-    linkActiveClass: 'selected'
-  },
-*/
 
-  // modules: ['modules/typescript.ts'],
+  /*
+  ** Customize the progress-bar color
+  */
+  loading: {color: '#3B8070'},
+
+  /*
+  ** Global CSS
+  */
+  css: [
+    'vuetify/src/stylus/main.styl'
+  ],
+
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+    '@/plugins/vuetify',
+    { src: '~/plugins/localStorage.js', ssr: false },
+  ],
+
+  /*
+  ** Nuxt.js modules
+  */
   modules: [
-    '@nuxtjs/vuetify'
+    '~modules/typescript.js'
   ],
 
-  // plugins: ['~/plugins/vuetify.js'],
+  /*
+  ** Build configuration
+  */
+  build: {
+    /*
+    ** You can extend webpack config here
+    */
+    extend(config, ctx) {
 
-  srcDir: "src/server"
+      if (ctx.isServer) {
+        config.externals = [
+          nodeExternals({
+            whitelist: [/^vuetify/]
+          })
+        ]
+      }
+    }
+  }
 }
