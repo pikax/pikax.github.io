@@ -50,6 +50,7 @@ module.exports = {
   plugins: [
     '@/plugins/vuetify',
     { src: '~/plugins/localStorage.js', ssr: false },
+    { src: '~/plugins/networkStatus.ts', ssr: false },
   ],
 
   /*

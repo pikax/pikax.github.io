@@ -45,13 +45,15 @@
 
 
     //footer
-    v-footer(app, fixed)
-      span 2018
+    v-footer(app)
+      gin-footer
+
 </template>
 <script>
-	export default {
+	import GinFooter from "../components/GinFooter";
+  export default {
 		name: "default",
-
+    components: {GinFooter},
     data: function () {
       return {
         drawer: false,
@@ -90,6 +92,11 @@
 
         nav();
       },
+    },
+
+
+    mounted(){
+
     }
 
 	}
@@ -99,6 +106,12 @@
 <style>
   .input-group__details:after {
     background-color: rgba(255, 255, 255, 0.32) !important;
+  }
+
+  .copy-right{
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 
   /*#app {*/

@@ -1,8 +1,7 @@
 import Vuex from 'vuex';
+import app from './modules/app';
 import manga from "./modules/manga";
 import user from "./modules/user";
-
-
 
 
 const createStore = () => {
@@ -11,7 +10,8 @@ const createStore = () => {
       counter: 0
     },
 
-    modules:[
+    modules: [
+      app,
       manga,
       user,
     ]

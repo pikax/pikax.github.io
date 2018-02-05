@@ -36,3 +36,12 @@ export enum USER {
   POPULATE_FAVORITE = 'POPULATE_FAVORITE',
 
 }
+
+
+
+export enum APP{
+
+  UPDATE_CONNECTIVITY = 'UPDATE_CONNECTIVITY',
+
+
+}
