@@ -12,18 +12,19 @@ module.exports = {
     titleTemplate: pkg.name + ' %s',
     meta: [
       {charset: 'utf-8'},
+      {property: 'mobile-web-app-capable', content: 'yes'},
       {
         property: 'og:image',
         content: 'https://user-images.githubusercontent.com/904724/26879447-689b56a8-4b91-11e7-968f-5eea1d6c71b4.png'
       },
-      { property: 'twitter:card', content: 'summary_large_image' },
-      { property: 'twitter:site', content: '@nuxt_js' },
+      {property: 'twitter:card', content: 'summary_large_image'},
+      {property: 'twitter:site', content: '@nuxt_js'},
     ],
 
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
       {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'}
-    ]
+    ],
   },
 
   /*
@@ -49,8 +50,6 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    { src: '~/plugins/localStorage.js', ssr: false },
-    { src: '~/plugins/networkStatus.ts', ssr: false },
   ],
 
   /*
@@ -58,8 +57,8 @@ module.exports = {
   */
   modules: [
     '~modules/typescript.js',
-    '@nuxtjs/pwa',
     '@nuxtjs/component-cache',
+    '@nuxtjs/font-awesome',
   ],
 
 
@@ -74,15 +73,15 @@ module.exports = {
   manifest: {
     name: 'Pikaxapp',
     description: 'pikax website',
- /*   short_name: 'PikaxApp',
-    start_url: '/',
-    display: "standalone",
-    lang: 'en',
-*/
+    /*   short_name: 'PikaxApp',
+       start_url: '/',
+       display: "standalone",
+       lang: 'en',
+   */
     theme_color: '#3B8070'
   },
 
-	//
+  //
   // workbox:{
   //   importScripts: [
   //     'sw.js'
@@ -112,7 +111,7 @@ module.exports = {
   render: {
     static: {
       maxAge: '1y',
-      setHeaders (res, path) {
+      setHeaders(res, path) {
         if (path.includes('sw.js')) {
           res.setHeader('Cache-Control', 'public, max-age=0')
         }
