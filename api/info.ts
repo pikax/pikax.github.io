@@ -9,7 +9,7 @@ export interface IProject {
 
   description: string;
 
-  links: { src: string, icon: string, className: string; }[];
+  links: { src: string, icon: string, className?: string; }[];
 };
 
 export class Data {
@@ -26,12 +26,16 @@ export class Data {
       title: "about"
     },
     {
+      src: "//linkedin.com/in/carlosdcrodrigues",
+      title: "linkedin"
+    },
+    {
       src: "//github.com/pikax",
       title: "github"
     },
     {
-      src: "//linkedin.com/in/carlosdcrodrigues",
-      title: "linkedin"
+      src: "//www.npmjs.com/~pikax",
+      title: "npm"
     }
   ];
 
@@ -47,8 +51,37 @@ export class Data {
 
       links: [
         {src: "//iplicit.com", icon: "fa-globe", className: "light-blue--text"},
-        {src: "//www.facebook.com/iplicit/", icon: "fa-facebook", className:"blue--text text--darken-4"}
+        {src: "//www.facebook.com/iplicit/", icon: "fa-facebook", className: "blue--text text--darken-4"}
 
+      ]
+    },
+    swgoh: {
+      title: "Swgoh",
+      website: "//github.com/pikax/swgoh",
+      cardSrc: "/swgoh/card.svg",
+      image: "/swgoh/devices-v4-1024x624.png",
+      subtitle: "Unofficial node library for swgoh.gg for nodejs, you can get profile, characters, guild members, ships, units and mods.",
+
+      description: "",
+
+
+      links: [
+        {src: "//github.com/pikax/swgoh", icon: "fa-github"},
+        {src: "//www.npmjs.com/package/swgoh/", icon: "fa-globe", className: "red--text text--darken-4"}
+      ]
+    },
+    ginDownloader: {
+      title: "Gin-downloader",
+      website: "//github.com/pikax/gin-downloader",
+      cardSrc: "/gin-downloader/card.svg",
+      image: "/gin-downloader/devices-v4-1024x624.png",
+      subtitle: "NodeJs library to download manga from public websites",
+      description: "",
+
+
+      links: [
+        {src: "//github.com/pikax/gin-downloader", icon: "fa-github"},
+        {src: "//www.npmjs.com/package/gin-downloader/", icon: "fa-globe", className: "red--text text--darken-4"}
       ]
     }
   };

@@ -4,7 +4,7 @@
       img.img-circle.elevation-7.mb-1(:src='info.image')
     div.headline {{info.name}}
     .subheading.text-xs-center.grey--text.pt-1.pb-3 {{info.subtext}}
-    v-layout(justify-space-between)
+    v-flex()
       v-btn(v-for='b in info.buttons', :key="b.title",
       flat, color='primary'
       , :href="b.src") {{b.title}}
