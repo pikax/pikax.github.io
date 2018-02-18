@@ -9,7 +9,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    titleTemplate: 'Carlos Rodrigues',
+    titleTemplate: '%sCarlos Rodrigues',
     meta: [
       {charset: 'utf-8'},
       {name: "viewport", content: 'width=device-width, initial-scale=1, user-scalable=no'},
@@ -52,7 +52,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify',
+    '@/plugins/vuetify'
   ],
 
   /*
@@ -107,8 +107,16 @@ module.exports = {
           nodeExternals({
             whitelist: [/^vuetify/]
           })
-        ]
+        ];
+
+
       }
+
+      config.module.rules.push({
+        test: /\.md$/,
+        use: 'raw-loader'
+      })
+
     }
   },
 

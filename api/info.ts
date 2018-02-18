@@ -1,9 +1,16 @@
+//from https://github.com/fortrabbit/quotes
+const quotes = require('./quotes.json');
+
+const iplicit = require('./iplicit.md');
+const sig = require('./sig.md');
+const about = require('./about.md');
+
+
 export interface IProject {
   title: string;
   website: string;
 
   cardSrc: string;
-  image: string;
 
   subtitle: string;
 
@@ -13,12 +20,14 @@ export interface IProject {
   to?: string;
 
   links: { src: string, icon: string, className?: string; }[];
-};
+}
 
 export class Data {
   name = "Carlos Rodrigues";
   subtext = "Fullstack developer";
   image = "//s.gravatar.com/avatar/1a99b582c69b5b5c7eced1e0dc47b694?s=200";
+
+  about = about;
   buttons = [
     {
       src: "/",
@@ -45,15 +54,14 @@ export class Data {
   projects: { [id: string]: IProject } = {
     iplicit: {
       title: "Iplicit",
-      website: "//iplicit.com",
+      website: "iplicit",
       cardSrc: "/iplicit/card.svg",
-      image: "/iplicit/devices-v4-1024x624.png",
 
       from: "Mar.2015",
       to: "Feb.2018",
 
       subtitle: "Cloud-based finance and business solution for organisations with up to 500 people.",
-      description: "",
+      description: iplicit,
 
 
       links: [
@@ -62,11 +70,29 @@ export class Data {
 
       ]
     },
+    sig: {
+      title: "Sistema Integrado de Gestão",
+
+      website: "/sig",
+      cardSrc: "/sig/card.jpg",
+
+      from: "Jun.2012",
+      to: "Feb.2015",
+
+      subtitle: "Sistema Integrado de Gestão is a bespoke software for a logistic company (Prodística).",
+      description: sig,
+
+
+      links: [
+        {src: "//datexis.pt", icon: "fa-globe", className: "light-blue--text"},
+        {src: "//https://www.facebook.com/datexis.inf/", icon: "fa-facebook", className: "blue--text text--darken-4"}
+
+      ]
+    },
     swgoh: {
       title: "Swgoh",
       website: "//github.com/pikax/swgoh",
       cardSrc: "/swgoh/card.svg",
-      image: "/swgoh/devices-v4-1024x624.png",
       subtitle: "Unofficial node library for swgoh.gg for nodejs, you can get profile, characters, guild members, ships, units and mods.",
 
       description: "",
@@ -81,7 +107,6 @@ export class Data {
       title: "Gin-downloader",
       website: "//github.com/pikax/gin-downloader",
       cardSrc: "/gin-downloader/card.svg",
-      image: "/gin-downloader/devices-v4-1024x624.png",
       subtitle: "NodeJs library to download manga from public websites",
       description: "",
 
@@ -92,6 +117,9 @@ export class Data {
       ]
     }
   };
+
+  quotes = quotes;
+  quote = null;
 }
 
 

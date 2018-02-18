@@ -7,6 +7,7 @@
     , :links="post.links"
     , :from="post.from"
     , :to="post.to"
+    , :website="post.website"
 
     )
 </template>
@@ -22,6 +23,13 @@
 
     computed: {
       ...mapGetters(["cards"]),
+    },
+
+
+    head(){
+      return {
+        title: 'Home | ',
+      }
     }
   }
 </script>

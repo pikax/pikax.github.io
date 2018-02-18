@@ -20,7 +20,16 @@ export default {
   },
 
   cards: (state: Data) => Object.keys(state.projects)
-    .map(x=>state.projects[x])
-    .map(convertToProjectCard)
+    .map(x => state.projects[x])
+    .map(convertToProjectCard),
+
+
+  projectByName: (state: Data) => (name) => state.projects[name],
+
+
+  quote: (state: Data) => state.quote,
+
+
+  about: (state: Data) => state.about,
 
 };

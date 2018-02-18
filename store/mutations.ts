@@ -1,47 +1,16 @@
+import {Data} from "~/api/info";
 
-
-
-
-
-
-export enum MANGA {
-  REQUEST_RECENT= 'REQUEST_RECENT',
-  RECEIVED_RECENT= 'RECEIVED_RECENT',
-
-
-
-  REQUEST_MY= 'REQUEST_MY',
-  RECEIVED_MY= 'RECEIVED_MY',
-
-
-
-  RECEIVED_INFO = "RECEIVED_INFO",
-  RECEIVED_INFO_ERROR = "RECEIVED_INFO_ERROR",
+export enum APP {
+    SET_RANDOM_QUOTE_INDEX = 'SET_RANDOM_QUOTE_INDEX',
 
 }
 
 
+export default {
 
-export enum USER {
-  REQUEST_USER_INFO = 'REQUEST_USER_INFO',
-  RECEIVED_USER_INFO = 'RECEIVED_USER_INFO',
-
-
-
-
-  SET_FAVORITE = 'SET_FAVORITE',
-  UNSET_FAVORITE = 'UNSET_FAVORITE',
-
-
-  POPULATE_FAVORITE = 'POPULATE_FAVORITE',
-
-}
-
-
-
-export enum APP{
-
-  UPDATE_CONNECTIVITY = 'UPDATE_CONNECTIVITY',
+  [APP.SET_RANDOM_QUOTE_INDEX]: (state: Data, payload) => {
+    state.quote = state.quotes[payload];
+  }
 
 
 }

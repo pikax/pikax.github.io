@@ -4,7 +4,6 @@ export interface IProject {
   website: string;
 
   cardSrc: string;
-  image: string;
 
   subtitle: string;
 

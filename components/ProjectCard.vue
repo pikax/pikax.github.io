@@ -17,7 +17,7 @@
       )
         v-icon(medium) {{l.icon}}
       v-spacer
-      v-btn.blue--text(flat, :href="page") Read More
+      v-btn.blue--text(flat, :href="website") Read More
 </template>
 
 <script>
@@ -25,16 +25,12 @@
     name: "ProjectCard",
 
 
-    computed: {
-      page() {
-        return "/" + this.title.toLowerCase();
-      }
-    },
 
     props: {
       image: String,
       title: String,
       description: String,
+      website: String,
 
       from: String,
       to: String,

@@ -4,6 +4,8 @@ import Vue from 'vue';
 
 import state from '~/api/info';
 import getters from './getters';
+import actions from "./actions";
+import mutations from "./mutations";
 
 
 
@@ -18,6 +20,8 @@ const createStore = () => {
   return new Vuex.Store({
     state,
 
+    actions,
+    mutations,
     getters,
   })
 }
