@@ -9,6 +9,9 @@ export interface IProject {
 
   description: string;
 
+  from?: string;
+  to?: string;
+
   links: { src: string, icon: string, className?: string; }[];
 };
 
@@ -45,6 +48,10 @@ export class Data {
       website: "//iplicit.com",
       cardSrc: "/iplicit/card.svg",
       image: "/iplicit/devices-v4-1024x624.png",
+
+      from: "Mar.2015",
+      to: "Feb.2018",
+
       subtitle: "Cloud-based finance and business solution for organisations with up to 500 people.",
       description: "",
 

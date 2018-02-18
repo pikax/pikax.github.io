@@ -7,6 +7,8 @@ const convertToProjectCard = (p: IProject): IProjectCard => ({
   website: p.website,
   image: p.cardSrc,
   description: p.subtitle,
+  from: p.from,
+  to: p.to,
   links: p.links,
 });
 

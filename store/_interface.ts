@@ -19,6 +19,9 @@ export interface IProjectCard {
 
   image: string;
 
+  from?: string;
+  to?: string;
+
   description: string;
 
   links: any;

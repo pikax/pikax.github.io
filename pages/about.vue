@@ -13,3 +13,13 @@
     </v-flex>
   </v-layout>
 </template>
+
+
+<script>
+
+  export default {
+    name: "pg-about",
+
+  }
+
+</script>

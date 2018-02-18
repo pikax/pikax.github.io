@@ -1,4 +1,4 @@
-const pkg = require('./package')
+const pkg = require('./package');
 
 const nodeExternals = require('webpack-node-externals')
 
@@ -84,12 +84,13 @@ module.exports = {
     theme_color: '#3B8070'
   },
 
-  //
-  // workbox:{
-  //   importScripts: [
-  //     'sw.js'
-  //   ],
-  // },
+  generate: {
+    routes: [
+      "/iplicit",
+      "/swgoh",
+      "/gin-downloader",
+    ]
+  },
 
 
   /*
