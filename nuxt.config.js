@@ -87,8 +87,8 @@ module.exports = {
   generate: {
     routes: [
       "/iplicit",
-      "/swgoh",
-      "/gin-downloader",
+      "/sig",
+      // "/gin-downloader",
     ]
   },
 
