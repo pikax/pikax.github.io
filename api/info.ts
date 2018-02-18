@@ -90,7 +90,7 @@ export class Data {
       ]
     },
     swgoh: {
-      title: "Swgoh",
+      title: "swgoh",
       website: "//github.com/pikax/swgoh",
       cardSrc: "/swgoh/card.svg",
       subtitle: "Unofficial node library for swgoh.gg for nodejs, you can get profile, characters, guild members, ships, units and mods.",
@@ -104,7 +104,7 @@ export class Data {
       ]
     },
     ginDownloader: {
-      title: "Gin-downloader",
+      title: "gin-downloader",
       website: "//github.com/pikax/gin-downloader",
       cardSrc: "/gin-downloader/card.svg",
       subtitle: "NodeJs library to download manga from public websites",
