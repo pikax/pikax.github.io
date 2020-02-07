@@ -1,29 +1,86 @@
-<template lang="pug">
-  v-app(light)
-    v-content
-      v-container
-        v-layout(row, wrap, align-center)
-          v-flex(xs12, md4)
-            info
-          v-flex(xs12, md5, offset-md2)
-            nuxt
-    v-footer.secondary(app)
-      the-footer
+<template>
+  <div class="flex flex-col">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <Header />
+    <nuxt />
+    <Footer />
+  </div>
 </template>
 
-<script>
-  import TheFooter from "../components/TheFooter";
-  import Info from "../components/Info";
+<script lang="ts">
+import info from '~/assets/info.json';
 
-  export default {
-    name: "default",
-    components: {Info, TheFooter},
+import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
 
+import { setInfo } from '@/composables';
+import { createComponent } from '@vue/composition-api';
 
+export default createComponent({
+  name: 'default-layout',
 
+  components: {
+    Header,
+    Footer
+  },
+
+  setup() {
+    setInfo(info);
   }
+});
 </script>
+<style>
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
 
-<style scoped>
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* 
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
 
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
+} */
 </style>

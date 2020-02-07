@@ -1,0 +1,17 @@
+{
+  "name": "Carlos",
+  "fullname": "Carlos Rodrigues",
+  "position": "Software Developer",
+
+  "profile_img": "/profile.jpg",
+  "greeting": "Heya this is",
+
+  "social": [
+    { "name": "github", "url": "https://github.com/pikax" },
+    { "name": "twitter", "url": "https://twitter.com/pikax_dev" },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/carlosdcrodrigues/"
+    }
+  ]
+}
