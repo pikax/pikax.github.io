@@ -1,5 +1,6 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col h-screen bg-gray-800 text-gray-200 overflow-auto">
+    <!-- <div class="max-h-screen overflow-auto"> -->
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -7,9 +8,12 @@
         your experience and security.
       </p>
     <![endif]-->
-    <Header />
-    <nuxt />
-    <Footer />
+
+
+    <Header class="flex-none" />
+    <nuxt class="px-2 flex-auto" />
+    <Footer class="flex-1" />
+    <!-- </div> -->
   </div>
 </template>
 
@@ -20,19 +24,19 @@ import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
 import { setInfo } from '@/composables';
-import { createComponent } from '@vue/composition-api';
+import { defineComponent } from '@vue/composition-api';
 
-export default createComponent({
+export default defineComponent({
   name: 'default-layout',
 
   components: {
     Header,
-    Footer
+    Footer,
   },
 
   setup() {
     setInfo(info);
-  }
+  },
 });
 </script>
 <style>
@@ -46,6 +50,30 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+
+  @screen md {
+    font-size: 16px;
+  }
+
+  @screen lg {
+    font-size: 16px;
+  }
+
+  @media screen (min-width: 1300px) {
+    font-size: 18px;
+  }
+  /* 
+  @screen xl {
+    font-size: 18px;
+  } */
+
+  @media screen (min-width: 1440px) {
+    font-size: 22px;
+  }
+
+  @media screen (min-width: 1800px) {
+    font-size: 26px;
+  }
 }
 
 *,
@@ -54,6 +82,7 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
 /* 
 .button--green {
   display: inline-block;

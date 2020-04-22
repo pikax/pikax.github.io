@@ -13,10 +13,10 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -36,24 +36,61 @@ export default {
   buildModules: [
     '@nuxt/typescript-build',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/font-awesome'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/fontawesome'],
+
+  /**
+   * Font awesome configuration
+   * See https://github.com/nuxt-community/fontawesome-module#icons
+   */
+  fontawesome: {
+    icons: {
+      solid: [
+        'faExternalLinkAlt',
+        // 'faUsers',
+        // 'faWallet',
+        // 'faCheckCircle',
+        // 'faCheckDouble',
+        // 'faSpinner',
+        // 'faTimes',
+        // 'faSync',
+        // 'faExchangeAlt',
+        // 'faPlusSquare',
+        // 'faMinusSquare',
+        // 'faAngleUp',
+        // 'faAngleDown',
+        // 'faAngleDoubleUp',
+        // 'faTicketAlt',
+      ],
+      // regular: ['faCheckCircle', 'faTrashAlt'],
+    },
+  },
+
+  // tailwindcss: {
+  //   purgeCSSInDev: true,
+  // },
+
+  purgeCSS: {
+    whitelist: ['font-awesome-icon'],
+    whitelistPatterns: [/^fa-/, /--fa$/],
+  },
+
   /*
    ** Build configuration
    */
   build: {
     postcss: {
       plugins: {
-        tailwindcss: path.resolve(__dirname, './tailwind.config.js')
-      }
+        tailwindcss: path.resolve(__dirname, './tailwind.config.js'),
+      },
     },
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 };

@@ -1,7 +1,9 @@
 <template>
-  <div class="">
-    <Me class="h-128" />
-    <Service class="h-128" />
+  <div
+    class="flex h-full py-3 md:py-5 border-t-2 border-b-8 border-gray-600 border-double align-middle flex-col justify-center"
+  >
+    <!-- <Me class="h-128" />
+    <Service class="h-128" />-->
     <!-- 
     <div>
       <logo />
@@ -32,7 +34,23 @@
           GitHub
         </a>
       </div>
-    </div> -->
+    </div>-->
+
+    <p class="text-lg">My name is Carlos Rodrigues,</p>
+    <p class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl">I make product owners vision come true</p>
+    <p class="mb-3">
+      After been doing software development for more than 10 years, I resolved to provide my services through my consultancy
+      <a
+        href="https://hypermob.co.uk"
+        class="text-orange-500 underline"
+        target="_bank"
+      >
+        Hypermob
+        <font-awesome-icon :icon="['fas', 'external-link-alt']" />
+      </a>
+    </p>
+
+    <p>I feel in love with Vue, lately been helping VueJS ecosystem on Github.</p>
   </div>
 </template>
 
@@ -41,6 +59,7 @@ import Logo from '~/components/Logo.vue';
 import Me from '@/widgets/Me.vue';
 import Service from '@/widgets/Service.vue';
 import { useQuote } from '@/composables';
+import { useFormat } from 'vue-composable';
 
 export default {
   components: {
@@ -50,6 +69,7 @@ export default {
   },
 
   setup() {
+
     return useQuote();
   }
 };
