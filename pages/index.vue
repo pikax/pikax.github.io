@@ -50,7 +50,7 @@
       </a>
     </p>
 
-    <p>I feel in love with Vue, lately been helping VueJS ecosystem on Github.</p>
+    <p>I fell in love with Vue, lately been helping VueJS ecosystem on Github.</p>
   </div>
 </template>
 
