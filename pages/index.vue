@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex h-full py-3 md:py-5 border-t-2 border-b-8 border-gray-600 border-double align-middle flex-col justify-center"
+    class="flex h-full py-3 md:py-5 border-t-2 border-b-8 border-gray-600 border-double align-middle flex-col justify-center xl:px-5"
   >
     <!-- <Me class="h-128" />
     <Service class="h-128" />-->
